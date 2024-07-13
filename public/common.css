@@ -1,0 +1,13 @@
+ul li {
+    text-decoration: none;
+    list-style: none;
+}
+
+a{
+    color: brown;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}

@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    margin: 50px;
+    width: 700px;
+    padding: 10px;
+    background-color: rgb(254, 219, 219);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 3px 3px 5px rgb(50, 50, 50);
+    border-radius: 10px;
+
+}
+
+
+form input, form label, form button, textarea {
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    margin: 15px 5px;
+    border-radius: 6px;
+}
+
+form input:focus, form button:hover ,form textarea:focus {
+    border: solid 2px rgb(255, 160, 160);
+}
+
+form input[type=checkbox] {
+margin: 15px 2px;
+}
+
+form button {
+    padding: 5px;
+    
+    border-radius: 5px;
+    
+}

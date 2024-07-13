@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeedBack</title>
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+    <form action="/feedback" method="post">
+<h1>Share Your Feedback</h1>
+
+        <div class="name"> <label for="customer-name">Your Name </label>
+        <input type="text" id="customer-name" name="customerName" required ></div>
+       
+<div class="email"> <label for="customer-email">Your Email </label>
+        <input type="email" id="customer-email" name="customerEmail" required></div>
+       
+<div class="age"> <label for="customer-age">Your Age</label>
+        <input type="number" name="customerAge" id="customer-age" required max="100" min="10">
+</div>
+<label for="item-purchased">What you purchased ?</label>
+
+
+
+
+<div class="items" name="items">
+<label for="tabel">Table</label>
+<input type="checkbox" name="item" value="table" id="tabel">
+<label for="chair">Chair</label>
+<input type="checkbox" name="item" value="chair" id="chair">
+<label for="sofa">Sofa</label>
+<input type="checkbox" name="item" value="sofa" id="sofa">
+<label for="bed">Bed</label>
+<input type="checkbox" name="item" id="bed">
+<label for="cupboard">Cupboard</label>
+<input type="checkbox" name="item" value="cupboard" id="cupboard">
+<label for="door">Door</label>
+<input type="checkbox" name="item"" value="door" id="door">
+</div>
+       <div class="feedback"><label for="customer-feedback">Your Feedback</label>
+        <textarea name="customerFeedback" id="customer-feedback" cols="30" rows="5" required></textarea>
+</div>
+        
+        <button>Submit</button>
+    </form>
+</body>
+</html>

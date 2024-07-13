@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <%- include('includes/head') %>
+    <link rel="stylesheet" href="review.css">
+</head>
+<body>
+    <main>
+
+        <% if(numberOfReviews === 0) { %> 
+           <h2><p class="review">Unfortunatly, right now we do not have anything to show. Let be first to review our shop</p></h2>
+           <a href="/feedback" class="reviewButton">Review Now</a>
+            <% } else {%> 
+        <ul >
+        <% for (const detail of reviews) { %>
+       <%- include('includes/review-list', {detail : detail}) %>
+       <% } %>
+    </ul>
+    <% } %> 
+</main>
+</body>
+</html>
